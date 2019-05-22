@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Ionic App</title>
+  <title>III Olho</title>
 
   <base href="/" />
 
@@ -20,6 +20,26 @@
 
 <body>
   <app-root></app-root>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCjROzAMjakO1iO89gLncl7XDLsQDeEhNk",
+    authDomain: "iiiolho.firebaseapp.com",
+    databaseURL: "https://iiiolho.firebaseio.com",
+    projectId: "iiiolho",
+    storageBucket: "iiiolho.appspot.com",
+    messagingSenderId: "544210472093",
+    appId: "1:544210472093:web:7ea387f0ad3a3814"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>  
 </body>
 
 </html>

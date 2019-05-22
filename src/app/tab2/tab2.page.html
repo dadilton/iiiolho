@@ -1,9 +1,57 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Configurações
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card>
+    <ion-card-title class="title-conectar">Conectar</ion-card-title>
+    <ion-button color="light" class="btn-bluetooth">
+      <ion-icon name="bluetooth"></ion-icon>
+    </ion-button>
+    <ion-button color="light" class="btn-bluetooth">
+      <ion-icon name="wifi"></ion-icon>
+    </ion-button>  
+  </ion-card>
+  <ion-card>
+    <ion-card-title class="title-conectar">Transparência</ion-card-title>
+    <ion-range min="0" max="100" color="medium" >
+      <ion-label slot="start">0%</ion-label>
+      <ion-label slot="end">100%</ion-label>
+    </ion-range>
+  </ion-card>  
+  <ion-card>
+    <ion-card-title class="title-conectar">Proximidade (metros)</ion-card-title>
+    <ion-range min="0" max="5" color="medium" >
+      <ion-label slot="start">1</ion-label>
+      <ion-label slot="end">5</ion-label>
+    </ion-range>
+  </ion-card>  
+  <ion-card>
+    <ion-card-title class="title-conectar">Bip Aviso</ion-card-title>
+    <ion-list>
+      <ion-item>
+            <ion-label class="title-conectar">Vibração</ion-label>
+            <ion-toggle></ion-toggle>
+      </ion-item>
+      <ion-item>
+      <ion-label class="title-conectar">Volume</ion-label>
+      <ion-range min="0" max="5" color="medium" >
+        <ion-icon name="volume-high" slot="start"></ion-icon>
+        <ion-icon name="volume-mute" slot="end"></ion-icon>
+      </ion-range>
+    </ion-item>
+    </ion-list>
+  </ion-card>  
+  <ion-card>
+    <ion-card-title  class="title-conectar">Carregamento por indução</ion-card-title>
+     <ion-range min="0" max="5" color="medium">
+       <ion-icon name="battery-dead" slot="start"></ion-icon>
+       <ion-icon name="battery-full" slot="end"></ion-icon>
+     </ion-range>
+  </ion-card>
+
+</ion-content>
